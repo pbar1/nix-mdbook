@@ -1,6 +1,6 @@
 # nix-mdbook
 
-Nix library flake for building [mdBook][1] projects.
+Nix library flake for building [mdBook][mdbook] projects.
 
 ## Quickstart
 
