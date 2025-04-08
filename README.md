@@ -19,6 +19,13 @@ For a slightly more complex example - using mdBook plugins like
 nix flake init -t github:pbar1/nix-mdbook#with-plugin
 ```
 
+Then, build the book. The Nix store output is `book` directory contents - the
+compiled book itself:
+
+```sh
+nix build .#book
+```
+
 ## Usage
 
 ### Flake
@@ -43,7 +50,7 @@ nix flake init -t github:pbar1/nix-mdbook#with-plugin
 }
 ```
 
-### [`mdbook.lib.buildMdBookProject`]
+### `mdbook.lib.buildMdBookProject`
 
 | Attribute            | Default Value      | Description                                                                                                        |
 | -------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------ |
