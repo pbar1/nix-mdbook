@@ -19,12 +19,20 @@ For a slightly more complex example - using mdBook plugins like
 nix flake init -t github:pbar1/nix-mdbook#with-plugin
 ```
 
-Then, build the book. The Nix store output is `book` directory contents - the
-compiled book itself:
+Then, build the book. The Nix store output in `result/` is the contents of the
+built `book/` directory (ie, the compiled book itself):
 
 ```sh
 nix build .#book
 ```
+
+### GitHub Actions & Pages
+
+The `with-plugin` example from above is built using GitHub Actions and deployed
+to GitHub Pages as a test.
+
+- [Demo site](https://pbar1.github.io/nix-mdbook)
+- [GitHub Actions workflow](./.github/workflows/publish-github-pages.yml)
 
 ## Usage
 
